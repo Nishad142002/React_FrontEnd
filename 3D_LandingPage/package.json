@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist --dest Assign_2-StreamingPlatform"
+    "deploy": "gh-pages -d dist --dest 3D_LandingPage"
   },
   "dependencies": {
     "@splinetool/react-spline": "^4.1.0",
