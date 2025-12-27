@@ -25,7 +25,7 @@ const HeroSlider = () => {
             </div>
             <div className="btn">
               <button className="btnWatch">
-                <i class="ri-play-fill"></i>Watch Now
+                <i className="ri-play-fill"></i>Watch Now
               </button>
               <button className="btnSave">
                 <i className="ri-bookmark-fill"></i>
