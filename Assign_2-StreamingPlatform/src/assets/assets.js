@@ -5,7 +5,7 @@ export const slider1 = `${import.meta.env.BASE_URL}SliderImg/hero1.jpg`;
 export const continueWatching = [
   {
     name: "The Batman",
-    img: `${import.meta.env.BASE_URL}batman.jpg`,
+    img: `${import.meta.env.BASE_URL}continue/batman.jpg`,
     year: "2021",
     duration: "2hr 12min",
   },
