@@ -2,8 +2,6 @@ import React from "react";
 import { slider1 } from "../assets/assets";
 
 const HorizontalCard = (props) => {
-  console.log(props);
-
   return (
     <div className="horizontalCard">
       <img src={props.elem.img} alt="" />
