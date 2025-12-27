@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right bottom, #b601bb, #012193, #5f1194, #020003);
+  padding: 0px 10px;
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  main {
+    padding: 0px 0px;
+  }
+}
+main .container {
+  width: 100%;
+  max-width: 1500px;
+  height: 94vh;
+  padding: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  main .container {
+    justify-content: flex-end;
+    padding: 10px 5px;
+  }
+}
+main .container .mainContainer {
+  height: 100%;
+  flex-grow: 1;
+  border-radius: 10px;
+  overflow-x: hidden;
+  /* For Firefox */
+  scrollbar-width: none;
+  /* For Internet Explorer and Edge */
+  -ms-overflow-style: none;
+}
+main .container .mainContainer::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 450px) {
+  main .container .mainContainer {
+    padding-left: 0;
+    width: 93%;
+  }
+}
+@media (max-width: 768px) {
+  main .container .mainContainer {
+    flex-grow: 0;
+    width: 92%;
+  }
+}/*# sourceMappingURL=index.css.map */
