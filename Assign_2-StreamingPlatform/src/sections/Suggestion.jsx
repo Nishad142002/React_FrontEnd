@@ -1,15 +1,14 @@
-import { useEffect, useRef, useState } from "react";
-import "./sections.scss";
-import HeroSlider from "../component/HeroSlider";
-import HorizontalCard from "../component/HorizontalCard";
-import { continueWatching } from "../assets/assets";
+import React, { useEffect, useRef, useState } from "react";
+import VerticalCard from "../component/VerticalCard";
+import { actionMovies } from "../assets/assets";
 
 const ITEM_WIDTH = 250;
 
-const Herosection = () => {
+const Suggestion = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   const containerRef = useRef();
+  const actionRef = useRef();
   const [maxScroll, setMaxScroll] = useState(0);
 
   const calculateMaxScroll = () => {
@@ -35,16 +34,14 @@ const Herosection = () => {
   }, []);
 
   return (
-    <section className="heroSection">
-      <HeroSlider />
-      <div className="herobottom">
-        <h2>Continue Watching</h2>
-        <div ref={containerRef} className="heroCardContainer">
-          {continueWatching.map((elem, idx) => {
-            return <HorizontalCard key={idx} elem={elem} />;
+    <div className="suggestion">
+      <div className="cardsSections">
+        <h2>Action</h2>
+        <div ref={containerRef} className="cardContianer">
+          {actionMovies.map((elem, idx) => {
+            return <VerticalCard key={idx} elem={elem} />;
           })}
         </div>
-
         <button
           className="scrol-btn scroll-left"
           disabled={scrollPosition <= 0}
@@ -64,8 +61,35 @@ const Herosection = () => {
           <i class="ri-arrow-right-wide-line"></i>
         </button>
       </div>
-    </section>
+
+      <div className="cardsSections">
+        <h2>Drama</h2>
+        <div ref={containerRef} className="cardContianer">
+          {actionMovies.map((elem, idx) => {
+            return <VerticalCard key={idx} elem={elem} />;
+          })}
+        </div>
+        <button
+          className="scrol-btn scroll-left"
+          disabled={scrollPosition <= 0}
+          onClick={() => {
+            handleScroll(-ITEM_WIDTH);
+          }}
+        >
+          <i class="ri-arrow-left-wide-line"></i>
+        </button>
+        <button
+          className="scrol-btn scroll-right"
+          disabled={scrollPosition >= maxScroll}
+          onClick={() => {
+            handleScroll(ITEM_WIDTH);
+          }}
+        >
+          <i class="ri-arrow-right-wide-line"></i>
+        </button>
+      </div>
+    </div>
   );
 };
 
-export default Herosection;
+export default Suggestion;

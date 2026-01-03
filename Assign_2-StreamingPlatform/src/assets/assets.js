@@ -34,3 +34,76 @@ export const continueWatching = [
     duration: "2hr 18min",
   },
 ];
+
+export const actionMovies = [
+  {
+    name: "Avenger EndGame",
+    img: "action/avengerEndGame.jpeg",
+    year: "2021",
+    duration: "2hr 56min",
+    isSaved: false,
+  },
+  {
+    name: "John Wick: Chapter 4",
+    img: "action/john_wick4.jpeg",
+    year: "2023",
+    duration: "2hr 49min",
+    isSaved: true,
+  },
+  {
+    name: "Top Gun: Maverick",
+    img: "action/top_gun.jpeg",
+    year: "2022",
+    duration: "2hr 10min",
+    isSaved: false,
+  },
+  {
+    name: "Mad Max: Fury Road",
+    img: "action/mad_max.jpeg",
+    year: "2015",
+    duration: "2hr 0min",
+    isSaved: true,
+  },
+  {
+    name: "Mission: Impossible - Fallout",
+    img: "action/mission_impossible.jpeg",
+    year: "2018",
+    duration: "2hr 27min",
+    isSaved: false,
+  },
+  {
+    name: "Gladiator II",
+    img: "action/gladiator.jpeg",
+    year: "2024",
+    duration: "2hr 28min",
+    isSaved: false,
+  },
+  {
+    name: "Extraction 2",
+    img: "action/extraction.jpeg",
+    year: "2023",
+    duration: "2hr 3min",
+    isSaved: true,
+  },
+  {
+    name: "Skyfall",
+    img: "action/skyfall.jpeg",
+    year: "2012",
+    duration: "2hr 23min",
+    isSaved: false,
+  },
+  {
+    name: "Spider-Man: No Way Home",
+    img: "action/spiderman3.jpeg",
+    year: "2021",
+    duration: "2hr 28min",
+    isSaved: true,
+  },
+  {
+    name: "F1 The Movie",
+    img: "action/f1movie.jpeg",
+    year: "2015",
+    duration: "2hr 17min",
+    isSaved: false,
+  },
+];

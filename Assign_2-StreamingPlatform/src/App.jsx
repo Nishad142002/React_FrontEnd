@@ -1,8 +1,7 @@
-import React from "react";
 import Herosection from "./sections/Herosection";
 import SideBarContainer from "./component/SideBarContainer";
 import Navbar from "./component/Navbar";
-import Other from "./sections/Other";
+import Suggestion from "./sections/Suggestion";
 
 const App = () => {
   return (
@@ -12,7 +11,7 @@ const App = () => {
         <SideBarContainer />
         <div className="mainContainer">
           <Herosection />
-          <Other />
+          <Suggestion />
         </div>
       </div>
     </main>
